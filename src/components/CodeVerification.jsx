@@ -3,6 +3,7 @@ import '../css/CodeVerification.css';
 
 function CodeVerification() {
     return (
+    <div className='principal-code-verification'>
       <div className="code-verification">
       <img src={require('./img/logo.jpg')} alt='logoimg'/>
       <h1 className="text-center">Recuerde pedir el código de registro en RR.HH</h1>   
@@ -21,6 +22,7 @@ function CodeVerification() {
               <label className="form-check-label">¿Ya tienes cuenta? <a href='#'>Conéctate</a></label>
           </div>
       </form>
+  </div>
   </div>
    );
  };

@@ -1,6 +1,14 @@
+.principal-register-form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .register-form {
+    height: 100%;
     width: 520px;
-    height: 858px;
+    height: min-content;
     padding: 20px;
     border-radius: 12px;
     background: #ffffff;

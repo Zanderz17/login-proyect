@@ -16,13 +16,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<LoginForm />} />
-            <Route path="/CodeVerification" element={<CodeVerification />} />
-            <Route path="/RegisterForm" element={<RegisterForm />} />
+            <Route exact path="/RegisterForm" element={<RegisterForm />} />
+            <Route exact path="/CodeVerification" element={<CodeVerification />} />
+            <Route exact path="/" element={<LoginForm />} />
         </Routes>
        </BrowserRouter>
-      
-
     </div>
   );
 }

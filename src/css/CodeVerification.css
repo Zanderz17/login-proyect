@@ -1,3 +1,11 @@
+.principal-code-verification {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
 .code-verification {
     width: 520px;
     height: min-content;
