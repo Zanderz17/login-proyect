@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/RegisterForm.css';
+import '../css/pages-styles/RegisterForm.css';
 
 function RegisterForm() {
     return (
         <div className="principal-register-form">
             <div className="register-form">
-                <img src={require('./img/logo.jpg')} alt='logoimg'/>
+                <img src={require('../img/logo.jpg')} alt='logoimg'/>
                 <h1 className="text-center">Verifique que los datos mostrados sean correctos</h1>   
                 <form className="needs-validation">
                 

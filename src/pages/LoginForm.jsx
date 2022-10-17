@@ -1,12 +1,12 @@
-import '../css/LoginForm.css';
 import React from 'react';
 
+import '../css/pages-styles/LoginForm.css';
 
 function LoginForm() {
     return (
         <div className="principal-login">
             <div className="login">
-                <img src={require('./img/logo.jpg')} alt='logoimg'/>
+                <img src={require('../img/logo.jpg')} alt='logoimg'/>
                 <h1 className="text-center">Iniciar sesión</h1>   
                 <form className="needs-validation">
                     <div className="form-group">
