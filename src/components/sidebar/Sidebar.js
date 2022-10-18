@@ -12,7 +12,7 @@ function Sidebar() {
         <img src={require('../../img/logoFinal.jpg')} alt='logo'/>
       </div>
       { items.map((item, index) => <SidebarItem key={index} item={item}></SidebarItem>)}
-      <div className='footer'>
+      <div className='footer sticky-top'>
         <div className='footer-name'>
           Sanders Chancan Chanca
         </div>

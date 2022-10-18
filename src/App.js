@@ -20,10 +20,10 @@ function App() {
             <Route exact path="/RegisterForm" element={<RegisterForm />} />
             <Route exact path="/CodeVerification" element={<CodeVerification />} />
             <Route exact path="/Sidebar" element={<TestSidebar />} />
+            <Route exact path="/User/Signin" element={<LoginForm />} />
             <Route exact path="/" element={<LoginForm />} />
         </Routes>
-       </BrowserRouter>
-       
+      </BrowserRouter>
     </div>
   );
 }
