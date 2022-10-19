@@ -1,7 +1,9 @@
 import React from 'react';
+import { useState } from 'react'
+
 import Sidebar from '../../components/sidebar/Sidebar'
 import Title from '../../components/title/Title'
-import { useState } from 'react'
+import '../../css/pages-styles/SolicitudDeCompra/SolCompraNewDoc.css'
 
 function SolCompraNewDoc() {
 const [inputList, setinputList]= useState([{IDMaterial:'', stockMaterial:''}]);
@@ -37,7 +39,7 @@ return (
             >
             </Title>
 
-            <div className='new-doc-form ml-2'>
+            <div className='new-doc-form'>
                 <h2>Registro de solicitud de compra</h2>   
                 <form>
                     <div className='container'>
@@ -54,24 +56,24 @@ return (
                         {    
                         inputList.map( (x,i)=>{
                             return(
-                                <div className="row form-group">
+                                <div className="list-products row form-group">
                                     <div className='col-5'>
                                         <label className="form-label" htmlFor="IDMaterial" onChange={e=>handleinputchange(e,i)} >Identificador del material</label>
-                                        <input className="form-control" type="number" id="IDMaterial" placeholder="XXXX-XXXX-XXXX-XXXX" required />
+                                        <input className="form-control" type="text" id="IDMaterial" placeholder="XXXX-XXXX-XXXX-XXXX" required />
                                     </div>
-                                    <div className='col-2'>
+                                    <div className='col-3'>
                                         <label className="form-label" htmlFor="stockMaterial" onChange={ e=>handleinputchange(e,i)} >Cantidad Requerida</label>
                                         <input className="form-control" type="number" id="IDMaterial" placeholder="000" required />
                                     </div>
                                     {
                                         inputList.length!==1 &&
-                                        <div className='col-3 my-auto'>
-                                            <button  className="btn btn-danger" onClick={()=> handleremove(i)}>Remove</button>
+                                        <div className='col-2 my-auto'>
+                                            <button  className="btn btn-danger w-100" onClick={()=> handleremove(i)}>Eliminar</button>
                                         </div>
                                     }
                                     { inputList.length-1===i &&
                                     <div className='col-2 my-auto'>
-                                        <button className="btn btn-success" onClick={handleaddclick}>Añadir</button>
+                                        <button className="btn btn-success w-100" onClick={handleaddclick}>Añadir</button>
                                     </div>
                                     }
                                     
@@ -98,6 +100,7 @@ return (
                                 <button className="btn btn-danger anular w-100">Anular</button>
                             </div>
                         </div>
+
                     </div>
                 </form>
             </div>

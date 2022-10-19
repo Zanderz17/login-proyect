@@ -3,7 +3,7 @@
     width: 268px;
     flex-shrink: 0;
     background-color: #1c2c6c;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     color: #fff;
@@ -41,7 +41,6 @@
     justify-content: center;
     position: sticky;
     margin-top: calc(100vh - 365px);
-
 }
 
 .footer-name{
