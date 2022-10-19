@@ -37,7 +37,7 @@ return (
             >
             </Title>
 
-            <div className='new-doc-form bg-primary ml-2'>
+            <div className='new-doc-form ml-2'>
                 <h2>Registro de solicitud de compra</h2>   
                 <form>
                     <div className='container'>
