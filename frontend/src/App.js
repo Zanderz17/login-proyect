@@ -12,18 +12,17 @@ import RegisterForm from './pages/RegisterForm';
 import TestSidebar from './components/test-components/TestSidebar';
 import SolCompraNewDoc from './pages/SolicitudDeCompra/SolCompraNewDoc';
 
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-            <Route exact path="/registerForm" element={<RegisterForm />} />
+            <Route exact path="/users/signup" element={<RegisterForm />} />
             <Route exact path="/codeVerification" element={<CodeVerification />} />
             <Route exact path="/sidebar" element={<TestSidebar />} />
-            <Route exact path="/user/signin" element={<LoginForm />} />
+            <Route exact path="/users/signin" element={<LoginForm />} />
             <Route exact path="/solCompraNewDoc" element={<SolCompraNewDoc />} />
-            <Route exact path="/" element={<LoginForm />} />
+            <Route exact path="/" />
         </Routes>
       </BrowserRouter>
     </div>
