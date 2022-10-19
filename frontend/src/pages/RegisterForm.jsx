@@ -8,7 +8,6 @@ function RegisterForm() {
                 <img src={require('../img/logo.jpg')} alt='logoimg'/>
                 <h1 className="text-center">Verifique que los datos mostrados sean correctos</h1>   
                 <form className="needs-validation">
-                
                     <div className="form-group">
                         <label className="form-label" htmlFor="email">Correo electrónico</label>
                         <input className="form-control" type="email" id="email" placeholder="sanderschancan@hotmail.com" required />
@@ -22,12 +21,12 @@ function RegisterForm() {
                     <div className="form-group">
                         <label className="form-label" htmlFor="lastName">Apellidos</label>
                         <input className="form-control" type="text" id="lastName" placeholder="Chancan Chanca" required />
-                    </div>            
+                    </div>
 
                     <div className="form-group">
                         <label className="form-label" htmlFor="role">Apellidos</label>
                         <input className="form-control" type="text" id="role" placeholder="Jefe de Compras" required />
-                    </div>      
+                    </div>
 
                     <div className="form-group">
                         <label className="form-label" htmlFor="password">Contraseña</label>
@@ -45,15 +44,14 @@ function RegisterForm() {
                     </div>
 
                     <input className="btn btn-success w-100" type="submit" value="Registrar" />
-
+                    
                     <div className="form-group text-center">
                         <label className="form-check-label">¿Ya tienes cuenta? <a href='#'>Conéctate</a></label>
                     </div>
-            </form>
+                </form>
+            </div>
         </div>
-  </div>
-   );
- };
- 
- export default RegisterForm;
- 
+    );
+};
+
+export default RegisterForm;

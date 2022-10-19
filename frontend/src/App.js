@@ -12,7 +12,6 @@ import RegisterForm from './pages/RegisterForm';
 import TestSidebar from './components/test-components/TestSidebar';
 import SolCompraNewDoc from './pages/SolicitudDeCompra/SolCompraNewDoc';
 
-
 function App() {
   return (
     <div className="App">
