@@ -1,8 +1,12 @@
 import Sidebar from '../sidebar/Sidebar';
+import Title from '../title/Title';
 
 function TestSidebar() {
   return (
-    <Sidebar />
+    <div className='d-flex'>
+      <Sidebar />
+      <Title></Title>
+    </div>
   );
 }
 

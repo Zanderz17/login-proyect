@@ -1,6 +1,6 @@
 /*--- Start img section --*/
 .sidebar{
-    width: 270px;
+    width: 268px;
     flex-shrink: 0;
     background-color: #1c2c6c;
     height: 100vh;
@@ -14,7 +14,7 @@
     height: 98px;
     width: 256px;
     padding: 10px 0px;
-    margin: 5px 0px;
+    margin: 0px 5px 0px 5px;
 }
 
 /*-- footer section --*/
