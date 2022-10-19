@@ -33,3 +33,13 @@
 .bottom-navbar a{
     margin: 10px;
 }
+
+.active{
+    color: #4763E4;
+    text-decoration: none;
+}
+
+.no-active{
+    color: #9FA6B2;
+    text-decoration: none;
+}

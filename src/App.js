@@ -10,6 +10,7 @@ import LoginForm from './pages/LoginForm.jsx';
 import CodeVerification from './pages/CodeVerification.jsx';
 import RegisterForm from './pages/RegisterForm';
 import TestSidebar from './components/test-components/TestSidebar';
+import SolCompraNewDoc from './pages/SolicitudDeCompra/SolCompraNewDoc';
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-            <Route exact path="/RegisterForm" element={<RegisterForm />} />
-            <Route exact path="/CodeVerification" element={<CodeVerification />} />
-            <Route exact path="/Sidebar" element={<TestSidebar />} />
-            <Route exact path="/User/Signin" element={<LoginForm />} />
+            <Route exact path="/registerForm" element={<RegisterForm />} />
+            <Route exact path="/codeVerification" element={<CodeVerification />} />
+            <Route exact path="/sidebar" element={<TestSidebar />} />
+            <Route exact path="/user/signin" element={<LoginForm />} />
+            <Route exact path="/solCompraNewDoc" element={<SolCompraNewDoc />} />
             <Route exact path="/" element={<LoginForm />} />
         </Routes>
       </BrowserRouter>
